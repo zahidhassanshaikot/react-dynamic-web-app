@@ -221,4 +221,11 @@
     font-size: 14px;
     font-weight: 400;
 }
+ .circleImg{
+     margin: 0 auto;
+     height: 100px;
+     width: 100px;
+     border: 1px solid #0073e6;
+     border-radius: 50%;
+ }
 
