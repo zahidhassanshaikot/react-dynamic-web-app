@@ -13,7 +13,7 @@
     background: rgba(0,0,0,0.6);
 }
 .topContent{
-   margin-top: 10rem;
+   margin-top: 12rem;
 }
 .topTitle{
     font-family: 'Montserrat','sans-serif';
@@ -46,7 +46,7 @@
       font-family: 'Raleway','sans-serif';
       font-weight: 400;
       font-size: 14px;
-    color: #6c777f;
+    color: #2b2b2b;
  }
 
  .serviceCard{
@@ -97,13 +97,13 @@
     text-decoration: none !important;
     font-family: 'Montserrat','sans-serif';
     font-weight: 400;
-    color: black !important;
+    color: #2b2b2b !important;
 }
 .des{
     font-family: 'Raleway','sans-serif';
     font-weight: 400;
     font-size: 14px;
-    color: black;
+    color: #2b2b2b;
 }
 
 .summaryBanner{
@@ -140,13 +140,13 @@
  .cardTitle{
      font-size: 22px;
      font-weight: 600;
-     color: black;
+     color: #2b2b2b;
      font-family: 'Raleway','sans-serif';
  }
  .cardSubTitle{
      font-size: 14px;
      font-weight: 400;
-     color: black;
+     color: #2b2b2b;
      font-family: 'Montserrat','sans-serif';
  }
  .iconBullet{
@@ -216,10 +216,12 @@
     font-family: 'Montserrat','sans-serif';
     font-size: 22px;
     font-weight: 600;
-}.videoDes{
+}
+.videoDes{
+    color: #2b2b2b;
      font-family: 'Raleway','sans-serif';
-    font-size: 14px;
-    font-weight: 400;
+     font-size: 14px;
+     font-weight: 400;
 }
  .circleImg{
      margin: 0 auto;
@@ -228,4 +230,45 @@
      border: 1px solid #0073e6;
      border-radius: 50%;
  }
+ .footerSection{
+     margin-top: 5rem;
+     box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
+ }
+ .socialLink{
+     text-decoration: none;
+     color: #0073e6;
+     font-family: 'Raleway','sans-serif';
+     font-size: 14px;
+     font-weight: 400;
+ }
+.socialLink:hover{
+    text-decoration: none;
+    color: #2b2b2b;
+ }
+.footerLink{
+    text-decoration: none;
+    color: #2b2b2b;
+    font-family: 'Raleway','sans-serif';
+    font-size: 14px;
+    font-weight: 400;
+}
+.footerLink:hover{
+     text-decoration: none;
+     color: #0073e6;
+ }
+.copyRightSection{
+    padding: 20px 20px 20px 20px;
+    background-color: #0073e6;
+}
+.copyRightLink{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat','sans-serif';
+    font-size: 14px;
+    font-weight: 400;
+}
+.copyRightLink:hover{
+    text-decoration: none;
+    color: #2b2b2b;
+}
 

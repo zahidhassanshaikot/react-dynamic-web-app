@@ -13,6 +13,7 @@ class TopNavigation extends Component {
             navBarLogo:[whiteLogo],
             navBarBack:"navBackground",
             navItem:"navItem",
+            navVariant:"dark",
         }
     }
     onScroll=()=>{
@@ -22,13 +23,15 @@ class TopNavigation extends Component {
                 navBarLogo:[blueLogo],
                 navBarBack:"navBackgroundScroll",
                 navItem:"navItemScroll",
+                navVariant:"light",
             });
         }else if(window.scrollY<100){
             this.setState({
                 navBarTitle:'navTitle',
                 navBarLogo:[whiteLogo],
                 navBarBack:"navBackground",
-                navItem:"navItem"
+                navItem:"navItem",
+                navVariant:"dark",
             });
         }
     }
@@ -39,7 +42,7 @@ class TopNavigation extends Component {
     render() {
         return (
             <Fragment>
-                <Navbar className={this.state.navBarBack} fixed="top" collapseOnSelect expand="lg" variant="dark">
+                <Navbar variant={this.state.navVariant} className={this.state.navBarBack} fixed="top" collapseOnSelect expand="lg">
                     <Navbar.Brand className={this.state.navBarTitle}><img src={this.state.navBarLogo}/> Zahid Hassan Shaikot</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
