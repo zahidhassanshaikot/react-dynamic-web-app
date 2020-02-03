@@ -1,11 +1,13 @@
 import React from 'react';
-import HomePage from "./pages/HomePage/HomePage";
-
+import { BrowserRouter, Route, Link,Switch } from "react-router-dom";
+import AppRoute from "./router/AppRoute";
 
 function App() {
   return (
     <div>
-        <HomePage/>
+        <BrowserRouter>
+            <AppRoute/>
+        </BrowserRouter>
     </div>
   );
 }
