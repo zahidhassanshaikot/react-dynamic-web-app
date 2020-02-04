@@ -5,6 +5,9 @@ import PageTop from "../components/PageTop/PageTop";
 import AllCourses from "../components/AllCourses/AllCourses";
 
 class CoursesPage extends Component {
+    componentDidMount() {
+        window.scroll(0,0);
+    }
     render() {
         return (
             <Fragment>

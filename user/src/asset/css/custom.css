@@ -1,4 +1,4 @@
-.topFixedBanner{
+.topFixedBanner {
     background-image: url("../image/ladybird.jpg");
     min-height: 500px;
     background-attachment: fixed;
@@ -6,107 +6,131 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.topBannerOverlay{
+
+.topBannerOverlay {
     position: absolute;
     min-height: 500px;
     width: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
-.topContent{
-   margin-top: 12rem;
+
+.topContent {
+    margin-top: 12rem;
 }
-.topTitle{
-    font-family: 'Montserrat','sans-serif';
+
+.topTitle {
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 700;
     color: #ffffff;
     font-size: 48px;
-}.topSubTitle{
-    font-family: 'Raleway','sans-serif';
+}
+
+.topSubTitle {
+    font-family: 'Raleway', 'sans-serif';
     font-weight: 600;
     color: #ffffff;
     font-size: 22px;
 }
- .serviceMainTitle{
-     color: #0073e6;
-     margin-top: 5rem;
-     margin-bottom: 3rem;
-     font-family: 'Montserrat','sans-serif';
-     font-weight: 600;
-     font-size: 28px;
 
- }
-  .serviceName{
-      margin-top: 1rem;
-      font-family: 'Raleway','sans-serif';
-      font-weight: 600;
-      font-size: 22px;
- }
-.serviceDescription{
-      margin-top: 1rem;
-      font-family: 'Raleway','sans-serif';
-      font-weight: 400;
-      font-size: 14px;
+.serviceMainTitle {
+    color: #0073e6;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    font-size: 28px;
+
+}
+
+.serviceName {
+    margin-top: 1rem;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.serviceDescription {
+    /*margin-top: 1rem;*/
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
     color: #2b2b2b;
- }
+}
 
- .serviceCard{
-     margin: 5px 5px 5px 5px;
-     height: 22rem;
-     padding:60px 30px 60px 30px ;
-     box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
- }
-.serviceCard:hover{
-     box-shadow: 0 0 16px 0 rgba(0, 115, 230, 0.2);
- }
-.navTitle{
-    font-family: 'Montserrat','sans-serif';
+.serviceCard {
+    margin: 5px 5px 5px 5px;
+    height: 22rem;
+    padding: 60px 30px 60px 30px;
+    box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
+}
+
+.serviceCard:hover {
+    box-shadow: 0 0 16px 0 rgba(0, 115, 230, 0.2);
+}
+
+.navTitle {
+    text-decoration: none;
+    font-family: 'Montserrat', 'sans-serif';
     color: #ffffff !important;
     font-weight: 700;
     font-size: 24px;
 }
-.navTitleScroll{
-    font-family: 'Montserrat','sans-serif';
+
+.navTitleScroll {
+    text-decoration: none;
+    font-family: 'Montserrat', 'sans-serif';
     color: #0073e6 !important;
     font-weight: 700;
     font-size: 24px;
 }
-.navBackground{
+.navTitle:hover {
+    text-decoration: none;
+}
+.navTitleScroll:hover {
+    text-decoration: none;
+}
+
+.navBackground {
     -webkit-transition: background-color 400ms linear;
     -moz-transition: background-color 400ms linear;
     -o-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
     background-color: rgba(0, 0, 0, .1) !important;
 }
-.navBackgroundScroll{
+
+.navBackgroundScroll {
     -webkit-transition: background-color 400ms linear;
     -moz-transition: background-color 400ms linear;
     -o-transition: background-color 400ms linear;
     transition: background-color 400ms linear;
     background-color: white;
-
+    box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.3);
 }
-.navItem{
+
+.navItem {
     font-size: 16px;
     text-decoration: none !important;
-    font-family: 'Montserrat','sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 400;
     color: white;
 }
-.navItemScroll{
+
+.navItemScroll {
     font-size: 16px;
     text-decoration: none !important;
-    font-family: 'Montserrat','sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 400;
     color: #2b2b2b;
 }
-.des{
-    font-family: 'Raleway','sans-serif';
+
+.des {
+    font-family: 'Raleway', 'sans-serif';
     font-weight: 400;
     font-size: 14px;
     color: #2b2b2b;
 }
 
-.summaryBanner{
+.summaryBanner {
     background-image: url("../image/ladybird.jpg");
     min-height: 350px;
     background-attachment: fixed;
@@ -114,164 +138,200 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.summaryOverlay{
+
+.summaryOverlay {
     position: absolute;
     min-height: 350px;
     width: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
-.summarySection{
+
+.summarySection {
     margin-top: 5rem;
 }
-.countNumber{
+
+.countNumber {
     color: white;
     font-size: 48px;
-    font-family: 'Montserrat','sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     font-weight: 600;
-}.countTitle{
+}
+
+.countTitle {
     color: white;
     font-size: 22px;
-     font-family: 'Raleway','sans-serif';
+    font-family: 'Raleway', 'sans-serif';
     font-weight: 600;
 }
- .countSection{
-     margin-top: 16%;
- }
- .cardTitle{
-     font-size: 22px;
-     font-weight: 600;
-     color: #2b2b2b;
-     font-family: 'Raleway','sans-serif';
- }
- .cardSubTitle{
-     font-size: 14px;
-     font-weight: 400;
-     color: #2b2b2b;
-     font-family: 'Montserrat','sans-serif';
- }
- .iconBullet{
-     color: #0073e6;
-     font-size: 16px;
- }
- .workCard{
-     margin-top: 14%;
-     padding: 10px 10px 10px 10px;
- }
- .projectCard{
-     border-radius: 2px;
-     border: none !important;
-     margin: 2px 2px 2px 2px;
-     box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
- }
-.projectCard:hover{
+
+.countSection {
+    margin-top: 16%;
+}
+
+.cardTitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b2b2b;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+.cardSubTitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2b2b2b;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+.iconBullet {
+    color: #0073e6;
+    font-size: 16px;
+}
+
+.workCard {
+    margin-top: 14%;
+    padding: 10px 10px 10px 10px;
+}
+
+.projectCard {
+    border-radius: 2px;
+    border: none !important;
+    margin: 2px 2px 2px 2px;
+    box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
+}
+
+.projectCard:hover {
     box-shadow: 0 0 16px 0 rgba(0, 115, 230, 0.2);
 }
-.projectCardTitle{
-    font-family: 'Montserrat','sans-serif';
+
+.projectCardTitle {
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 18px;
     font-weight: 600;
 }
-.projectCardDes{
-     font-family: 'Raleway','sans-serif';
+
+.projectCardDes {
+    font-family: 'Raleway', 'sans-serif';
     font-size: 14px;
     font-weight: 400;
 }
-.CourseImage{
+
+.CourseImage {
     width: 100%;
 }
-.CourseTitle{
-    font-family: 'Montserrat','sans-serif';
+
+.CourseTitle {
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 18px;
     font-weight: 600;
 }
-.CourseDes{
-     font-family: 'Raleway','sans-serif';
-     font-size: 14px;
-     font-weight: 400;
+
+.CourseDes {
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 14px;
+    font-weight: 400;
 }
-.CourseDetails{
+
+.CourseDetails {
     text-decoration: none;
-     font-family: 'Raleway','sans-serif';
-     font-size: 14px;
-     font-weight: 600;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 14px;
+    font-weight: 600;
     color: #0073e6;
-}.CourseDetails:hover{
+}
+
+.CourseDetails:hover {
     text-decoration: none;
 }
- .videoCard{
-     box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
-     padding: 6rem 3rem 6rem 3rem;
-     background-color: white;
-     margin: 50px auto;
- }
-.videoCard:hover{box-shadow: 0 0 16px 0 rgba(0, 115, 230, 0.2);
- }
-.playBtn{
+
+.videoCard {
+    box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
+    padding: 6rem 3rem 6rem 3rem;
+    background-color: white;
+    margin: 50px auto;
+}
+
+.videoCard:hover {
+    box-shadow: 0 0 16px 0 rgba(0, 115, 230, 0.2);
+}
+
+.playBtn {
     color: #0073e6;
     font-size: 48px;
     cursor: pointer;
 }
-.videoTitle{
+
+.videoTitle {
     color: #0073e6;
-    font-family: 'Montserrat','sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 22px;
     font-weight: 600;
 }
-.videoDes{
+
+.videoDes {
     color: #2b2b2b;
-     font-family: 'Raleway','sans-serif';
-     font-size: 14px;
-     font-weight: 400;
-}
- .circleImg{
-     margin: 0 auto;
-     height: 100px;
-     width: 100px;
-     border: 1px solid #0073e6;
-     border-radius: 50%;
- }
- .footerSection{
-     margin-top: 5rem;
-     box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
- }
- .socialLink{
-     text-decoration: none;
-     color: #0073e6;
-     font-family: 'Raleway','sans-serif';
-     font-size: 14px;
-     font-weight: 400;
- }
-.socialLink:hover{
-    text-decoration: none;
-    color: #2b2b2b;
- }
-.footerLink{
-    text-decoration: none;
-    color: #2b2b2b;
-    font-family: 'Raleway','sans-serif';
+    font-family: 'Raleway', 'sans-serif';
     font-size: 14px;
     font-weight: 400;
 }
-.footerLink:hover{
-     text-decoration: none;
-     color: #0073e6;
- }
-.copyRightSection{
+
+.circleImg {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #0073e6;
+    border-radius: 50%;
+}
+
+.footerSection {
+    margin-top: 5rem;
+    box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2);
+}
+
+.socialLink {
+    text-decoration: none;
+    color: #0073e6;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.socialLink:hover {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-family: 'Raleway', 'sans-serif';
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footerLink:hover {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.copyRightSection {
     padding: 20px 20px 20px 20px;
     background-color: #0073e6;
 }
-.copyRightLink{
+
+.copyRightLink {
     text-decoration: none;
     color: white;
-    font-family: 'Montserrat','sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     font-size: 14px;
     font-weight: 400;
 }
-.copyRightLink:hover{
+
+.copyRightLink:hover {
     text-decoration: none;
     color: #2b2b2b;
 }
-.topFixedPage{
+
+.topFixedPage {
     background-image: url("../image/ladybird.jpg");
     min-height: 280px;
     background-attachment: fixed;
@@ -279,23 +339,62 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.topPageOverlay{
+
+.topPageOverlay {
     position: absolute;
     min-height: 280px;
     width: 100%;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
 }
-.topPageContent{
+
+.topPageContent {
     margin-top: 9rem;
 }
-.pageTitle{
-     font-family: 'Raleway','sans-serif';
-     font-weight: 600;
-     color: #ffffff;
-     font-size: 28px;
- }
-.form-control:focus{
+
+.topPageContentCourse {
+    margin-top: 6rem;
+}
+
+.courseFullTitle {
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.courseSubTitle {
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.courseDes {
+    color: white;
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.pageTitle {
+    font-family: 'Raleway', 'sans-serif';
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.form-control:focus {
     border-radius: 2px !important;
     border-color: #0073e6 !important;;
     box-shadow: 0 0 8px 0 rgba(0, 115, 230, 0.2) !important;
+}
+
+.linkStyle {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.linkStyle:hover {
+    text-decoration: none !important;
+    color: white !important;
 }

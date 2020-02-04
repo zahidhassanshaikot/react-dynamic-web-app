@@ -8,7 +8,7 @@ class ProjectDetails extends Component {
                 <Container className="mt-5">
                     <Row>
                         <Col lg={6} md={6} sm={12}>
-                            <img className="serviceName" src="https://rabbil.com/ControlPanel/Images/mobilepondit.png"/>
+                            <img className="serviceName CourseImage" src="https://cdn.pixabay.com/photo/2016/01/19/14/50/desk-1148994_960_720.jpg"/>
                         </Col>
                         <Col lg={6} md={6} sm={12}>
                             <h2>Foll Bazzar</h2>
