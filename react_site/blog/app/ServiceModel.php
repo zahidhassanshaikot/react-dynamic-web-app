@@ -10,5 +10,5 @@ class ServiceModel extends Model
     protected $primaryKey='id';
     public $incrementing=true;
     protected $keyType= 'int';
-    protected $timestamps=false;
+    public $timestamps=false;
 }
