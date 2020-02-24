@@ -13,8 +13,8 @@ class Footer extends Component {
                     <Row>
                         <Col lg={3} md={6} sm={12} className="p-5 text-justify">
                             <h1 className="serviceName">Follow Me</h1>
-                            <a className="socialLink" href="#"><FontAwesomeIcon icon={faFacebook}/> Facebook</a><br/>
-                            <a className="socialLink" href="#"><FontAwesomeIcon icon={faYoutube}/> Youtube</a>
+                            <Link className="socialLink" to="#"><FontAwesomeIcon icon={faFacebook}/> Facebook</Link><br/>
+                            <Link className="socialLink" to="#"><FontAwesomeIcon icon={faYoutube}/> Youtube</Link>
 
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-5 text-justify">
@@ -39,7 +39,7 @@ class Footer extends Component {
                     </Row>
                 </Container>
                 <Container fluid={true} className='copyRightSection text-center'>
-                    <a className="copyRightLink" href="#" >shaikot.com &copy; 2020 2021</a>
+                    <Link className="copyRightLink" to="#" >shaikot.com &copy; 2020 2021</Link>
                 </Container>
             </Fragment>
         );
