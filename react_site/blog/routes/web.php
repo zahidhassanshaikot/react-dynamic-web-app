@@ -15,3 +15,8 @@ $router->post('/projectDetails','ProjectController@onSelectDetails');
 $router->get('/footer','FooterController@onSelect');
 $router->get('/information','InformationController@onSelect');
 $router->get('/services','ServiceController@onSelect');
+
+$router->get('/videoHome','HomeEtcController@selectVideoInfo');
+$router->get('/TotalProjectClient','HomeEtcController@onAllSelect');
+$router->get('/techDesc','HomeEtcController@selectTechDesc');
+$router->get('/homeTopTitle','HomeEtcController@homeTitle');

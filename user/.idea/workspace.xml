@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fac8760-03fc-49e1-a1dc-3ff672b64b40" name="Default Changelist" comment="" />
+    <list default="true" id="2fac8760-03fc-49e1-a1dc-3ff672b64b40" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../react_site/blog/app/Http/Controllers/HomeEtcController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../react_site/blog/app/Http/Controllers/HomeEtcController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_site/blog/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../react_site/blog/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../react_site/blog/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../react_site/blog/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,14 +36,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../practice/reduxjs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -82,6 +89,10 @@
       <workItem from="1580876769920" duration="6682000" />
       <workItem from="1580963039581" duration="5823000" />
       <workItem from="1581136497760" duration="1871000" />
+      <workItem from="1582871679702" duration="328000" />
+      <workItem from="1582872021349" duration="919000" />
+      <workItem from="1582910319287" duration="921000" />
+      <workItem from="1582911708676" duration="1864000" />
     </task>
     <servers />
   </component>
@@ -100,26 +111,31 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581142818071" />
-    <state width="1323" height="51" key="GridCell.Tab.0.bottom" timestamp="1580996279387">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1579" height="222" key="GridCell.Tab.0.bottom" timestamp="1582916476191">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="51" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580996279387" />
-    <state width="1323" height="51" key="GridCell.Tab.0.center" timestamp="1580996279387">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1579" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582916476191" />
+    <state width="1579" height="222" key="GridCell.Tab.0.center" timestamp="1582916476191">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="51" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580996279387" />
-    <state width="1323" height="51" key="GridCell.Tab.0.left" timestamp="1580996279387">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1579" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582916476191" />
+    <state width="1579" height="222" key="GridCell.Tab.0.left" timestamp="1582916476190">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="51" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580996279387" />
-    <state width="1323" height="51" key="GridCell.Tab.0.right" timestamp="1580996279387">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1579" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582916476190" />
+    <state width="1579" height="222" key="GridCell.Tab.0.right" timestamp="1582916476191">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="51" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580996279387" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1580986280927">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1579" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582916476191" />
+    <state x="513" y="126" key="SettingsEditor" timestamp="1582872330461">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580986280927" />
+    <state x="513" y="126" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1582872330461" />
     <state x="492" y="282" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580375523122">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
