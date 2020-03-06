@@ -1,5 +1,5 @@
 <?php
-
+$router->group(['middleware' => 'auth'], function () use ($router) {
 $router->get('/ChartData','ChartDataController@onAllSelect');
 $router->get('/ClientReview','ClientReviewController@onAllSelect');
 $router->post('/contactSend','ContactController@onContactSend');
@@ -20,3 +20,4 @@ $router->get('/videoHome','HomeEtcController@selectVideoInfo');
 $router->get('/TotalProjectClient','HomeEtcController@onAllSelect');
 $router->get('/techDesc','HomeEtcController@selectTechDesc');
 $router->get('/homeTopTitle','HomeEtcController@homeTitle');
+    });

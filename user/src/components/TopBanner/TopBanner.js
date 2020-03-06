@@ -1,7 +1,16 @@
 import React, {Component, Fragment} from 'react';
 import {Button, Col, Container, Row} from "react-bootstrap";
+import RestClient from "../../RestAPI/RestClient";
+import AppUrl from "../../RestAPI/AppUrl";
+
 
 class TopBanner extends Component {
+
+    componentDidMount() {
+        RestClient.GetRequest(AppUrl.HomeTopTitle);
+
+    }
+
     render() {
         return (
             <Fragment>
