@@ -8,9 +8,10 @@ use App\ContactTableModel;
 class ContactController extends Controller
 {
     function onContactSend(Request $request){
-        $name= $request->input('name');
-        $email= $request->input('email');
-        $message= $request->input('message');
+        $contactArray = json_decode($request->getContent(),true);
+        $name= $contactArray['name'];
+        $email= $contactArray['email'];
+        $message= $contactArray['message'];
 
        $result=ContactTableModel::insert(['name'=>$name,'email'=>$email,'message'=>$message]);
        if($result==true){

@@ -4,8 +4,35 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import {Link} from "react-router-dom";
+import RestClient from "../../RestAPI/RestClient";
+import AppUrl from "../../RestAPI/AppUrl";
 
 class Footer extends Component {
+    constructor() {
+        super();
+        this.state={
+            address: "",
+            email: "",
+            phone: "",
+            facebook: "",
+            youtube: "",
+            footer_credit: ""
+        }
+    }
+    componentDidMount() {
+        RestClient.GetRequest(AppUrl.footer).then(result =>{
+            this.setState({
+                address:result[0]['address'],
+                email:result[0]['email'],
+                phone:result[0]['phone'],
+                facebook:result[0]['facebook'],
+                youtube:result[0]['youtube'],
+                footer_credit:result[0]['footer_credit']
+            })
+        }).catch(error=>{
+            // this.setState({title:"?????",subtitle:"????"})
+        });
+    }
     render() {
         return (
             <Fragment>
@@ -13,16 +40,15 @@ class Footer extends Component {
                     <Row>
                         <Col lg={3} md={6} sm={12} className="p-5 text-justify">
                             <h1 className="serviceName">Follow Me</h1>
-                            <Link className="socialLink" to="#"><FontAwesomeIcon icon={faFacebook}/> Facebook</Link><br/>
-                            <Link className="socialLink" to="#"><FontAwesomeIcon icon={faYoutube}/> Youtube</Link>
+                            <Link className="socialLink" to={this.state.facebook}><FontAwesomeIcon icon={faFacebook}/> Facebook</Link><br/>
+                            <Link className="socialLink" to={this.state.youtube}><FontAwesomeIcon icon={faYoutube}/> Youtube</Link>
 
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-5 text-justify">
                             <h1 className="serviceName">Address</h1>
-                            <p className="serviceDescription">#79/6 Padma Residential Aria, 3rd Floor Front Side,
-                                Rajshahi</p>
-                            <p className="serviceDescription"><FontAwesomeIcon icon={faEnvelope}/> demo@gmail.com</p>
-                            <p className="serviceDescription"><FontAwesomeIcon icon={faPhone}/> +880 1000 000 000</p>
+                            <p className="serviceDescription">{this.state.address}</p>
+                            <p className="serviceDescription"><FontAwesomeIcon icon={faEnvelope}/> {this.state.email}</p>
+                            <p className="serviceDescription"><FontAwesomeIcon icon={faPhone}/> {this.state.phone}</p>
                         </Col>
                         <Col lg={3} md={6} sm={12} className="p-5 text-justify">
                             <h1 className="serviceName">Information</h1>

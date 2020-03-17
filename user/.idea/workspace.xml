@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fac8760-03fc-49e1-a1dc-3ff672b64b40" name="Default Changelist" comment="" />
+    <list default="true" id="2fac8760-03fc-49e1-a1dc-3ff672b64b40" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../react_site/blog/app/Http/Controllers/ChartDataController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../react_site/blog/app/Http/Controllers/ChartDataController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +55,7 @@
       <recent name="D:\Shaikot\react\user\src\asset\image" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.AppDebag">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="AppDebag" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:3000" useFirstLineBreakpoints="true">
       <method v="2" />
     </configuration>
@@ -99,6 +101,10 @@
       <workItem from="1582911708676" duration="2036000" />
       <workItem from="1583256966701" duration="2024000" />
       <workItem from="1583514511879" duration="6058000" />
+      <workItem from="1584075609971" duration="2601000" />
+      <workItem from="1584123760794" duration="3955000" />
+      <workItem from="1584441541724" duration="8649000" />
+      <workItem from="1584458317328" duration="6189000" />
     </task>
     <servers />
   </component>
@@ -109,6 +115,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="392" y="88" key="#Notifications" timestamp="1584127241963">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="88" key="#Notifications/0.0.1600.860@0.0.1600.860" timestamp="1584127241963" />
     <state x="227" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583521241365">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -125,26 +135,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1581142818071" />
-    <state width="1579" height="276" key="GridCell.Tab.0.bottom" timestamp="1583522830912">
+    <state width="1579" height="59" key="GridCell.Tab.0.bottom" timestamp="1584472368535">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="51" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580996279387" />
-    <state width="1579" height="276" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1583522830912" />
-    <state width="1579" height="276" key="GridCell.Tab.0.center" timestamp="1583522830912">
+    <state width="1579" height="59" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584472368535" />
+    <state width="1579" height="59" key="GridCell.Tab.0.center" timestamp="1584472368535">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="51" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580996279387" />
-    <state width="1579" height="276" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1583522830912" />
-    <state width="1579" height="276" key="GridCell.Tab.0.left" timestamp="1583522830912">
+    <state width="1579" height="59" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584472368535" />
+    <state width="1579" height="59" key="GridCell.Tab.0.left" timestamp="1584472368535">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="51" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580996279387" />
-    <state width="1579" height="276" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1583522830912" />
-    <state width="1579" height="276" key="GridCell.Tab.0.right" timestamp="1583522830912">
+    <state width="1579" height="59" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584472368535" />
+    <state width="1579" height="59" key="GridCell.Tab.0.right" timestamp="1584472368535">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1323" height="51" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580996279387" />
-    <state width="1579" height="276" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1583522830912" />
+    <state width="1579" height="59" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584472368535" />
     <state width="1579" height="276" key="GridCell.Tab.1.bottom" timestamp="1583522830912">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -206,59 +216,5 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580792337622" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/RestAPI/RestClient.js</url>
-          <line>3</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/RestAPI/RestClient.js</url>
-          <line>4</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/RestAPI/RestClient.js</url>
-          <line>5</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/RestAPI/RestClient.js</url>
-          <line>6</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/RestAPI/RestClient.js</url>
-          <line>7</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/RestAPI/RestClient.js</url>
-          <line>9</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/RestAPI/RestClient.js</url>
-          <line>10</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/TopBanner/TopBanner.js</url>
-          <line>9</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

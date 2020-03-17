@@ -39,6 +39,7 @@ class Authenticate
 //            return response('Unauthorized.', 401);
 //        }
 
-        return $next($request)->header('Access-Control-Allow-Origin','*');
+        return $next($request)->header('Access-Control-Allow-Origin','*')
+                              ->header('Access-Control-Allow-Methods','*');
     }
 }
