@@ -10,7 +10,7 @@ $router->post('/courseDetails','CourseController@onSelectDetails');
 
 $router->get('/projectAll','ProjectController@onSelectAll');
 $router->get('/projectHome','ProjectController@onSelectThree');
-$router->post('/projectDetails','ProjectController@onSelectDetails');
+$router->get('/projectDetails/{projectId}','ProjectController@onSelectDetails');
 
 $router->get('/footer','FooterController@onSelect');
 $router->get('/information','InformationController@onSelect');

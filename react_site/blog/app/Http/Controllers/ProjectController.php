@@ -15,8 +15,8 @@ class ProjectController extends Controller
         $result=ProjectModel::limit(3)->get();
         return $result;
     }
-    function onSelectDetails(Request $request){
-        $id=$request->input('id');
+    function onSelectDetails($projectId){
+        $id=$projectId;
         $result=ProjectModel::findOrFail($id);
         return $result;
     }

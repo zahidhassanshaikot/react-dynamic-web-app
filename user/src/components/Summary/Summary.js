@@ -30,7 +30,7 @@ class Summary extends Component {
                                         </Col>
                                         <Col>
                                             <h1 className="countNumber">
-                                                <CountUp start={0} end={100}>
+                                                <CountUp start={0} end={600}>
                                                     {({ countUpRef, start }) => (
                                                         <VisibilitySensor onChange={start} delayedCall>
                                                             <span ref={countUpRef} />
@@ -38,7 +38,7 @@ class Summary extends Component {
                                                     )}
                                                 </CountUp>
                                             </h1>
-                                            <h4 className="countTitle">Total Projects</h4>
+                                            <h4 className="countTitle">Total Client</h4>
                                             <hr className="bg-white w-25"/>
                                         </Col>
                                     </Row>

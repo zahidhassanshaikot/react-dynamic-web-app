@@ -9,7 +9,7 @@ class AppUrl {
     static services          = this.BaseUrl +'/services';
     static information       = this.BaseUrl +'/information';
     static footer            = this.BaseUrl +'/footer';
-    static projectDetails    = this.BaseUrl +'/projectDetails';
+    static projectDetails    = this.BaseUrl +'/projectDetails/';
     static projectHome       = this.BaseUrl +'/projectHome';
     static projectAll        = this.BaseUrl +'/projectAll';
     static courseDetails     = this.BaseUrl +'/courseDetails';
