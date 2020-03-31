@@ -6,7 +6,7 @@ $router->post('/contactSend','ContactController@onContactSend');
 
 $router->get('/courseAll','CourseController@onSelectAll');
 $router->get('/courseHome','CourseController@onSelectFour');
-$router->post('/courseDetails','CourseController@onSelectDetails');
+$router->get('/courseDetails/{courseId}','CourseController@onSelectDetails');
 
 $router->get('/projectAll','ProjectController@onSelectAll');
 $router->get('/projectHome','ProjectController@onSelectThree');

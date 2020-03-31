@@ -30,7 +30,10 @@ class Courses extends Component {
                     <Col lg={6} md={6} sm={12}>
                         <h5 className="CourseTitle">{myList.short_title}</h5>
                         <p className="CourseDes">{myList.short_description}</p>
-                        <Link className="CourseDetails" to="/course-details">Details</Link>
+                        <Link
+                            className="CourseDetails"
+                            to={"/course-details/"+myList.id+"/"+myList.short_title}
+                        >Details</Link>
                     </Col>
                 </Row>
             </Col>

@@ -15,8 +15,8 @@ class CourseController extends Controller
         $result=CourseTableModel::limit(4)->get();
         return $result;
     }
-    function onSelectDetails(Request $request){
-        $id=$request->input('id');
+    function onSelectDetails($courseId){
+        $id=$courseId;
         $result=CourseTableModel::findOrFail($id);
         return $result;
     }

@@ -8,9 +8,49 @@ import {
     ReplayControl,
     VolumeMenuButton
 } from "video-react";
+import ReactHtmlParser from "react-html-parser";
+import RestClient from "../../RestAPI/RestClient";
+import AppUrl from "../../RestAPI/AppUrl";
 
 class CourseDetails extends Component {
+    constructor(props) {
+        super();
+        this.state={
+            id:props.courseID,
+            short_title:"",
+            small_img:"",
+            short_description:"",
+            long_title:"",
+            total_lecture:"",
+            total_student:"",
+            long_des:"",
+            skill_all:"",
+            video_url:"",
+            courses_link:"",
+        }
+    }
+    componentDidMount() {
+
+        RestClient.GetRequest(AppUrl.courseDetails+this.state.id).then(result =>{
+
+            this.setState({
+                short_title:result['short_title'],
+                small_img:result['small_img'],
+                short_description:result['short_description'],
+                long_title:result['long_title'],
+                total_lecture:result['total_lecture'],
+                total_student:result['total_student'],
+                long_des:result['long_des'],
+                skill_all:result['skill_all'],
+                video_url:result['video_url'],
+                courses_link:result['courses_link']
+            })
+        }).catch(error=>{
+            // this.setState({title:"?????",subtitle:"????"})
+        });
+    }
     render() {
+        console.log(this.state.video_url)
         return (
             <Fragment>
                 <Container fluid={true} className="topFixedPage p-0">
@@ -18,55 +58,54 @@ class CourseDetails extends Component {
                         <Container className="topPageContentCourse">
                             <Row>
                                 <Col sm={12} md={6} lg={6}>
-                                    <h3 className="courseFullTitle">Full Dynamic Website With Admin Panel</h3>
-                                    <h5 className="courseSubTitle">Total Lecture=30</h5>
-                                    <h5 className="courseSubTitle">Total Student=30</h5>
+                                    <h3 className="courseFullTitle">{this.state.long_title}</h3>
+                                    <h5 className="courseSubTitle">Total Lecture={this.state.total_lecture}</h5>
+                                    <h5 className="courseSubTitle">Total Student={this.state.total_student}</h5>
                                 </Col>
                                 <Col sm={12} md={6} lg={6}>
                                    <p className="courseDes">
-                                       I am a highly talented, experienced, professional and cooperative software engineer, I am working in programming and web world for more than 4 years .I assure you a wide range of quality IT services. Web development, mobile app development and UI design the major filed i am expert in. Moreover i have teaching passion. I makes video tutorial to share my knowledge. My over all skill makes me a complete software developer, so you can hire me for your projects
+                                       {
+                                           this.state.long_des
+                                       }
                                    </p>
                                 </Col>
                             </Row>
                         </Container>
                     </div>
                 </Container>
+                {
+                    this.state.video_url &&(
+                        <Container className="mt-5">
+                            <Row>
+                                <Col sm={12} md={6} lg={6}>
+                                    <h1 className="serviceName">Skill You Get </h1>
+                                    {
+                                        ReactHtmlParser(this.state.skill_all)
+                                    }
 
-                <Container className="mt-5">
-                    <Row>
-                        <Col sm={12} md={6} lg={6}>
-                            <h1 className="serviceName">Skill You Get </h1>
-                            <ul>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                                <li className="serviceDescription">Unlimited Dynamic Product Category</li>
-                            </ul>
-                            <Button variant="primary">Buy Now</Button>
-                        </Col>
-                        <Col sm={12} md={6} lg={6}>
-                            <Player>
-                                <source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4" />
-                                <BigPlayButton position="center" />
-                                <LoadingSpinner />
-                                <ControlBar autoHide={false}>
-                                    <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} />
-                                    <VolumeMenuButton vertical />
-                                    <ReplayControl seconds={5} order={2.1} />
-                                    <ReplayControl seconds={10} order={2.2} />
-                                    <ForwardControl seconds={5} order={3.1} />
-                                    <ForwardControl seconds={10} order={3.2} />
-                                </ControlBar>
-                            </Player>
-                        </Col>
-                    </Row>
-                </Container>
+                                    <Button variant="primary">Buy Now</Button>
+                                </Col>
+                                <Col sm={12} md={6} lg={6}>
+                                    <Player>
+                                        {/*<source src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"/>*/}
+                                        <source src={this.state.video_url}/>
+                                        <BigPlayButton position="center" />
+                                        <LoadingSpinner />
+                                        <ControlBar autoHide={false}>
+                                            <PlaybackRateMenuButton rates={[5, 2, 1, 0.5, 0.1]} />
+                                            <VolumeMenuButton vertical />
+                                            <ReplayControl seconds={5} order={2.1} />
+                                            <ReplayControl seconds={10} order={2.2} />
+                                            <ForwardControl seconds={5} order={3.1} />
+                                            <ForwardControl seconds={10} order={3.2} />
+                                        </ControlBar>
+                                    </Player>
+                                </Col>
+                            </Row>
+                        </Container>
+                    )
+                }
+
             </Fragment>
         );
     }
