@@ -1,3 +1,8 @@
+.loaderAnimation{
+    width: 150px;
+    height: 150px;
+}
+
 .topFixedBanner {
     background-image: url("../image/ladybird.jpg");
     min-height: 500px;
@@ -184,7 +189,7 @@
 
 .iconBullet {
     color: #0073e6;
-    font-size: 16px;
+    /*font-size: 16px;*/
 }
 
 .workCard {
